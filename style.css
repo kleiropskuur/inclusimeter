@@ -43,7 +43,7 @@ header{
 }
 .homebtn{
     color: #000000;
-    font-family: inter-medium;
+    font-family: inter-regular;
     text-decoration: none;
 }
 .homebtn mark{
@@ -119,6 +119,20 @@ header{
   }
   .menulink{
     color: #000000;
+    text-decoration: none;
+  }
+  .menulink:hover, .menulink:active{
+    text-decoration: underline;
+  }
+
+  .lang{
+    position: absolute;
+    bottom: 15px;
+
+    margin: auto;
+
+    color: #000000;
+    font-size: 1.1em;
     text-decoration: none;
   }
 /*----------------------------------------------------------------------------------*/
