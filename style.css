@@ -13,15 +13,15 @@
 }
 @font-face {
     font-family: 'inter-medium';
-    src: url();
+    src: url(Fonts/Inter-Medium.ttf);
 }
 @font-face {
     font-family: 'inter-semi';
-    src: url();
+    src: url(Fonts/Inter-SemiBold.ttf);
 }
 @font-face {
     font-family: 'inter-bold';
-    src: url();
+    src: url(Fonts/Inter-Bold.ttf);
 }
 
 /*----------------------------------------------------------------------------------*/
