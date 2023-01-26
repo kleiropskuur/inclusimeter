@@ -54,6 +54,7 @@ body{
 h1{
     font-family: inter-bold;
     margin-bottom: 30px;
+    margin-left: 15px;
 }
 /*----------------------------------------------------------------------------------*/
 /*MENU------------------------------------------------------------------------------*/
@@ -189,25 +190,27 @@ img{
 /*STATION---------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 
+.page{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
 .stations{
+    height: 30px;
     width: calc(100vw - 30px);
     border-bottom: 1px solid black;
-    padding-bottom: 10px;
-    display: flex;
+    margin: 0 auto;
 }
 select{
+    appearance: none;
     font-family: inter-regular;
     font-size: 1em;
-    appearance: none;
-    width: 80%;
-    height: 30px;
-
     border: none;
-}
-
-.stations img{
-    width: 10px;
-    height: 10px;
 }
 /*----------------------------------------------------------------------------------*/
 /*TYPEFACES-------------------------------------------------------------------------*/
