@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Inclusimeter</title>
+    <link rel="stylesheet" href="style.css">  
+    <script>
+      function calculatePercentage() {
+        var checkboxes = document.querySelectorAll("input[type='checkbox']");
+        var checkedCount = 0;
+        for (var i = 0; i < checkboxes.length; i++) {
+          if (checkboxes[i].checked) {
+            checkedCount++;
+          }
+        }
+        var percentage = (checkedCount / checkboxes.length) * 100;
+        localStorage.setItem("percentage", percentage);
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+        <a href="" class="homebtn">
+            <mark>DE INCLUSIMETER</mark>
+            <br>
+            iedereen goed op weg
+        </a>
+    </header>
+    <a href="javascript:;" class="menubtn">
+        <span></span>
+        <span></span>
+    </a>
+    <div class="menu">
+        <ul class="menulist">
+            <li class="menuitem"><a href="error.html" class="menulink">HOME</a></li>
+            <li class="menuitem"><a href="overview.html" class="menulink">OVERZICHT</a></li>
+            <li class="menuitem"><a href="checklist.html" class="menulink">CHECKLIST</a></li>
+            <li class="menuitem"><a href="error.html" class="menulink">PERS</a></li>
+            <li class="menuitem"><a href="error.html" class="menulink">OVER</a></li>
+            <li class="menuitem"><a href="error.html" class="menulink">PARTNERS</a></li>
+            <li class="menuitem"><a href="error.html" class="menulink">CONTACT</a></li>
+        </ul>
+        <div class="lang">
+            <a href="" class="lo" id="nl">nl</a>
+            <a href="error.html" class="lo" id="fr">fr</a>
+            <a href="error.html" class="lo" id="en">eng</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    <form>
+      <input type="checkbox" onchange="calculatePercentage()"> visuele signalisatie<br>
+      <input type="checkbox" onchange="calculatePercentage()"> aankondigingen<br>
+      <input type="checkbox" onchange="calculatePercentage()"> toegankelijk toilet<br>
+      <input type="checkbox" onchange="calculatePercentage()"> tactiele geleiding<br>
+      <input type="checkbox" onchange="calculatePercentage()"> liften<br>
+      <input type="checkbox" onchange="calculatePercentage()"> roltrappen<br>
+      <input type="checkbox" onchange="calculatePercentage()"> verharde perrons<br>
+      <input type="checkbox" onchange="calculatePercentage()"> loketten<br>
+      <input type="checkbox" onchange="calculatePercentage()"> assistentie<br>
+      <input type="checkbox" onchange="calculatePercentage()"> toegankelijke omgeving<br>
+
+    </form>
+    <a href="result.html" class="btn">NAAR RESULTAAT</a>
+  </body>
+</html>
