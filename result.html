@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultaat | De Inclusimetererror.html</title>
+    <link rel="stylesheet" href="style.css">  
+    <script>
+      window.onload = function() {
+        document.getElementById("percentage").innerHTML = localStorage.getItem("percentage") + "%";
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+        <a href="" class="homebtn">
+            <mark>DE INCLUSIMETER</mark>
+            <br>
+            iedereen goed op weg
+        </a>
+    </header>
+    <a href="javascript:;" class="menubtn">
+        <span></span>
+        <span></span>
+    </a>
+    <div class="menu">
+        <ul class="menulist">
+            <li class="menuitem"><a href="https://kleiropskuur.github.io/woopsie/" class="menulink">HOME</a></li>
+            <li class="menuitem"><a href="overview.html" class="menulink">OVERZICHT</a></li>
+            <li class="menuitem"><a href="checklist.html" class="menulink">CHECKLIST</a></li>
+            <li class="menuitem"><a href="https://kleiropskuur.github.io/woopsie/" class="menulink">PERS</a></li>
+            <li class="menuitem"><a href="https://kleiropskuur.github.io/woopsie/" class="menulink">OVER</a></li>
+            <li class="menuitem"><a href="https://kleiropskuur.github.io/woopsie/" class="menulink">PARTNERS</a></li>
+            <li class="menuitem"><a href="https://kleiropskuur.github.io/woopsie/" class="menulink">CONTACT</a></li>
+        </ul>
+        <div class="lang">
+            <a href="" class="lo" id="nl">nl</a>
+            <a href="error.html" class="lo" id="fr">fr</a>
+            <a href="error.html" class="lo" id="en">eng</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    <p class="result">JE STATION IS
+        <br>
+        <span id="percentage"></span>
+        <br>
+        TOEGANKELIJK
+    </p>
+
+    <h2>Dit mist er nog:</h2> 
+    <div class="lacking"></div>
+
+    <a href="overview.html" class="btn">MEER INFO</a>
+  </body>
+</html>
