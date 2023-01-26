@@ -37,9 +37,9 @@ body{
 
 header{
     z-index: 3;
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    position: fixed;
+    top: 15px;
+    left: 15px;
 }
 .homebtn{
     color: #000000;
@@ -52,6 +52,27 @@ header{
     color: #FF6B00;
     font-family: inter-semi;
     font-size: 1.3em;
+}
+
+.menubtn{
+    z-index: 3;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+
+    width: 30px;
+    height: 30px;
+    background: yellow;
+
+    display: flex;
+}
+.menubtn span{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+
+    transition: .3s;
 }
 /*----------------------------------------------------------------------------------*/
 /*TYPEFACES-------------------------------------------------------------------------*/
