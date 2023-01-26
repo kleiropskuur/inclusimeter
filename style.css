@@ -62,7 +62,6 @@ header{
 
     width: 30px;
     height: 30px;
-    background: yellow;
 
     display: flex;
 }
@@ -86,6 +85,42 @@ header{
 .menubtn.is-active span:nth-child(2){
     top: 50%;
 }
+
+.menu{
+    position: fixed;
+    z-index: 2;
+  
+    width: 100vw;
+    height: 100vh;
+    background-color: #FF7557;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    transition: .3s;
+  
+    visibility: hidden;
+    opacity: 0;
+  }
+  .menu.is-active{
+    visibility: visible;
+    opacity: 1;
+  }
+  .menulist{
+    font-size: 2em;
+  }
+  .menuitem{
+    margin-bottom: 0.75em;
+    list-style: none;
+  }
+  .menuitem:last-of-type{
+    margin-bottom: 0;
+  }
+  .menulink{
+    color: #000000;
+    text-decoration: none;
+  }
 /*----------------------------------------------------------------------------------*/
 /*TYPEFACES-------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------*/
