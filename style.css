@@ -33,10 +33,19 @@ body{
 }
 
 .btn{
+    position: absolute;
+    left: 15px;
     bottom: 15px;
-    width: calc(100vw - 40px);
-    height: 25px;
+    display: block;
+    margin: auto;
+    width: calc(100vw - 30px);
+    height: 30px;
     background-color: #FF6B00;
+
+    border-radius: 5px;
+
+    color: #ffffff;
+    text-decoration: none;
 }
 /*----------------------------------------------------------------------------------*/
 /*MENU------------------------------------------------------------------------------*/
