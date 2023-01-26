@@ -130,10 +130,21 @@ header{
     bottom: 15px;
 
     margin: auto;
+    width: 100px;
+    
+    display: flex;
+    justify-content: space-between;
+  }
+  .lo{
 
     color: #000000;
-    font-size: 1.1em;
+    font-size: 1.2em;
     text-decoration: none;
+  }
+  #nl, #fr:hover, #fr:active, #en:hover, #en:active{
+    text-decoration: underline;
+    text-decoration-color: #FF6B00;
+    text-underline-offset: 5px;
   }
 /*----------------------------------------------------------------------------------*/
 /*TYPEFACES-------------------------------------------------------------------------*/
