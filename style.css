@@ -224,3 +224,6 @@ select{
     font-family: inter-bold;
     font-weight: 3em;
 }
+#percentage{
+    color: #FF6B00;
+}
